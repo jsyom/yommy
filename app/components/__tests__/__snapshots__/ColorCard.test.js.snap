@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorCard component should render as expected 1`] = `
+<div
+  className="single-card"
+  style={
+    Object {
+      "backgroundColor": "#2C3B40",
+    }
+  }
+>
+  <div
+    className="label"
+  >
+    <p>
+      <b>
+        HEX: 
+      </b>
+      #2C3B40
+    </p>
+    <p>
+      <b>
+        Color: 
+      </b>
+      DarkSlateGray
+    </p>
+  </div>
+</div>
+`;

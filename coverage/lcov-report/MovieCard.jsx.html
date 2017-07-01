@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for MovieCard.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> MovieCard.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/6</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import Img from 'react-image';
+//react-image allows us to have default src for img tags
+&nbsp;
+const MovieCard = props =&gt; {
+	//default greeting for the initial render/load
+	<span class="missing-if-branch" title="if path not taken" >I</span>if (props.movie.Title === undefined &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!props.error)</span> {
+<span class="cstat-no" title="statement not covered" >		return (</span>
+			&lt;div className="initial-greeting"&gt;
+				&lt;h2&gt;Welcome to Film Palette!&lt;/h2&gt;
+				&lt;p&gt;Enter a film title to get its details and a color palette for its poster!&lt;/p&gt;
+			&lt;/div&gt;
+		);
+	}
+	//error message
+	<span class="missing-if-branch" title="if path not taken" >I</span>if (props.error) {
+<span class="cstat-no" title="statement not covered" >		return (</span>
+			&lt;div className="error-message"&gt;
+				&lt;h2&gt;{props.error}&lt;/h2&gt;
+			&lt;/div&gt;
+		);
+	}
+&nbsp;
+	return (
+		&lt;div className="movie-container"&gt;
+			&lt;div className="poster-container"&gt;
+				&lt;Img
+					className="poster"
+					alt={`${props.movie.Title} Poster`}
+					src={[
+						`${props.movie.Poster}`,
+						'https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/53555d2ae4b04b5c0a1c8d6a/1398103339812/'
+					]}
+				/&gt;
+			&lt;/div&gt;
+			&lt;div className="movie-content"&gt;
+				&lt;h2&gt;&lt;b&gt;Title: &lt;/b&gt;{props.movie.Title}&lt;/h2&gt;
+				&lt;p&gt;&lt;b&gt;Release Year: &lt;/b&gt;{props.movie.Year}&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;Plot: &lt;/b&gt;{props.movie.Plot}&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;Actors: &lt;/b&gt;{props.movie.Actors}&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;Director: &lt;/b&gt;{props.movie.Director}&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;Genre: &lt;/b&gt;{props.movie.Genre}&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	);
+};
+&nbsp;
+export default MovieCard;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Jun 27 2017 01:13:06 GMT-0400 (EDT)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

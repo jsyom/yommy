@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard component should render as expected 1`] = `
+<div
+  className="movie-container"
+>
+  <div
+    className="poster-container"
+  >
+    <Img
+      alt="Superman Poster"
+      className="poster"
+      loader={false}
+      src={
+        Array [
+          "https://images-na.ssl-images-amazon.com/images/M/MV5BOWU0ZGE4YjMtNmY5Yy00M2RhLWE0ZGQtZjViMTBhZTE5MWM4XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+          "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/53555d2ae4b04b5c0a1c8d6a/1398103339812/",
+        ]
+      }
+      unloader={false}
+    />
+  </div>
+  <div
+    className="movie-content"
+  >
+    <h2>
+      <b>
+        Title: 
+      </b>
+      Superman
+    </h2>
+    <p>
+      <b>
+        Release Year: 
+      </b>
+      1978
+    </p>
+    <p>
+      <b>
+        Plot: 
+      </b>
+      An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest superhero.
+    </p>
+    <p>
+      <b>
+        Actors: 
+      </b>
+      Marlon Brando, Gene Hackman, Christopher Reeve, Ned Beatty
+    </p>
+    <p>
+      <b>
+        Director: 
+      </b>
+      Richard Donner
+    </p>
+    <p>
+      <b>
+        Genre: 
+      </b>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MovieCard renders props as expected 1`] = `
+<div
+  className="movie-container"
+>
+  <div
+    className="poster-container"
+  >
+    <Img
+      alt="Superman Poster"
+      className="poster"
+      loader={false}
+      src={
+        Array [
+          "https://images-na.ssl-images-amazon.com/images/M/MV5BOWU0ZGE4YjMtNmY5Yy00M2RhLWE0ZGQtZjViMTBhZTE5MWM4XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+          "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/53555d2ae4b04b5c0a1c8d6a/1398103339812/",
+        ]
+      }
+      unloader={false}
+    />
+  </div>
+  <div
+    className="movie-content"
+  >
+    <h2>
+      <b>
+        Title: 
+      </b>
+      Superman
+    </h2>
+    <p>
+      <b>
+        Release Year: 
+      </b>
+      1978
+    </p>
+    <p>
+      <b>
+        Plot: 
+      </b>
+      An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest superhero.
+    </p>
+    <p>
+      <b>
+        Actors: 
+      </b>
+      Marlon Brando, Gene Hackman, Christopher Reeve, Ned Beatty
+    </p>
+    <p>
+      <b>
+        Director: 
+      </b>
+      Richard Donner
+    </p>
+    <p>
+      <b>
+        Genre: 
+      </b>
+    </p>
+  </div>
+</div>
+`;
