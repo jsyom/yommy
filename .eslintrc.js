@@ -21,7 +21,7 @@ module.exports = {
         "no-unused-expressions": "off",
         "one-var": "off",
         "new-parens": "off",
-      "indent": ["error", 2
+        "indent": ["error", 2
         // ,
             // {
             //     "SwitchCase": 1,
