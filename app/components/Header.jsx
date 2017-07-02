@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
       scrolled: false,
-      menuClicked: false
+      menuClicked: false,
+      scrollPosition: 0
     };
     this.handleScroll = this.handleScroll.bind(this);
+    this.scrollToTop = this.scrollToTop.bind(this);
+    this.scrollToBottom = this.scrollToBottom.bind(this);
   }
 
   componentDidMount() {
@@ -25,12 +29,18 @@ class Header extends Component {
     });
   }
 
+  scrollToBottom() {
+    console.log('scrolling To Bottom');
+    window.scrollTo(5000, 5000);
+  }
+  scrollToTop() {
+    console.log('scrolling To Top');
+    window.scrollTo(0, 0);
+  }
   handleScroll() {
     if (window.scrollY > 100) {
-      console.log('scrolllingggg');
       this.setState({ scrolled: true });
     } else if (window.scrollY < 100) {
-      console.log('not scrolllingggg');
       this.setState({ scrolled: false });
     }
   }
@@ -41,6 +51,8 @@ class Header extends Component {
         <div className='header-item'>Home</div>
         <div className='header-item'>About</div>
         <div className='header-item'>John</div>
+        <div className='header-item' onClick={() => this.scrollToBottom() } >Scroll Button to Bottom</div>
+        <div className='header-item' onClick={() => this.scrollToTop() } >Scroll Button to Top</div>
         <div onClick={() => this.onMenuClick()} className='menu-item'>
           {
             this.state.menuClicked

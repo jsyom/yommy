@@ -23,14 +23,7 @@ class About extends Component {
           </div>
           <div className='About-items'>
             ~ Skills <br/>
-            <span>&nbsp;&nbsp; => Javascript(ES6)</span><br/>
-            {/* <span>&nbsp;&nbsp; => React</span><br/> */}
-            {/* <span>&nbsp;&nbsp; => Redux</span><br/> */}
-            {/* <span>&nbsp;&nbsp; => Node</span><br/> */}
-            {/* <span>&nbsp;&nbsp; => Express</span><br/> */}
-            {/* <span>&nbsp;&nbsp; => PostgreSQL</span><br/> */}
-            {/* <span>&nbsp;&nbsp; => Socket.io</span><br/> */}
-            {/* <span>&nbsp;&nbsp; => Docker.io</span><br/> */}
+            <span>&nbsp;&nbsp; => ["Javascript(ES6)", "React", "Redux", "Node", "Express", "PostgreSQL"]</span><br/>
           </div>
           <div className='About-items'>
             ~ Projects <br />

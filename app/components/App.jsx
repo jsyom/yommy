@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Jumbo from './Jumbo';
 import About from './About';
+import Projects from './Projects';
+import Footer from './Footer';
 
 export default class App extends Component {
   constructor(props) {
@@ -17,6 +19,8 @@ export default class App extends Component {
         <Header />
         <Jumbo />
         <About />
+        <Projects />
+        <Footer />
       </div>
     );
   }
