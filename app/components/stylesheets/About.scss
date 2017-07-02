@@ -1,13 +1,34 @@
+@import 'Media.scss';
+
 .About {
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   min-height: 400px;
   background-color: #4C5364;
   color: #ffffff;
+    // @include respond-to(handhelds) {
+    //   font-size: 12px;
+    // }
+  .About-header {
+    background: #CCCCCC;
+    border-radius: 10px 10px 0px 0px;
+    height: 20px;
+    margin: 30px 30px 0px;
+  };
   .About-editor {
-    margin: 30px;
+    margin: 0px 30px;
+    padding: 30px 0px;
+    // margin: 0 auto;
     min-height: 200px;
-    background-color: white;
-  }
+    background-color: #383737;
+    padding-left: 15px;
+      .About-items {
+        font-family: 'Source Code Pro', monospace;
+        text-transform: none;
+        text-align: left;
+        padding: 5px;
+      };
+  };
 }

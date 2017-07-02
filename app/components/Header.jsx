@@ -9,18 +9,22 @@ class Header extends Component {
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
+
   onMenuClick() {
     console.log(this.state.menuClicked);
     this.setState({
       menuClicked: !this.state.menuClicked
     });
   }
+
   handleScroll() {
     if (window.scrollY > 100) {
       console.log('scrolllingggg');
@@ -38,9 +42,10 @@ class Header extends Component {
         <div className='header-item'>About</div>
         <div className='header-item'>John</div>
         <div onClick={() => this.onMenuClick()} className='menu-item'>
-          { this.state.menuClicked
-          ? <i className="fa fa-cog" aria-hidden="true"></i>
-          : <i className="fa fa-bars" aria-hidden="true"></i>
+          {
+            this.state.menuClicked
+            ? <i className="fa fa-cog" aria-hidden="true"></i>
+            : <i className="fa fa-bars" aria-hidden="true"></i>
           }
         </div>
       </div>

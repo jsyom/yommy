@@ -3,11 +3,11 @@
 .jumbo {
   background-color: black;
   img {
+    display: block;
     width: 100vw;
     height: 100%;
     overflow: hidden;
-    margin: 0;
-    background-position: center;
-    background-size: cover;
+    // background-position: center;
+    // background-size: cover;
   };
 }
